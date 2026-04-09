@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(npx --version)",
+      "Bash(java -version)",
+      "Bash(npm install:*)",
+      "Bash(cmd.exe /c \"node --version && npm --version\")",
+      "Read(//c/Program Files/nodejs//**)",
+      "Read(//c/Users/samsi/AppData/Roaming/**)",
+      "Bash(\"/c/Program Files/nodejs/npm.cmd\" install)",
+      "Bash(cmd.exe /c \"set PATH=%PATH%;C:\\\\Program Files\\\\nodejs && cd C:\\\\Users\\\\samsi\\\\Projects\\\\unifiedAI\\\\unifiedai-app && npm install\")",
+      "Bash(cmd.exe /c \"set PATH=C:\\\\Program Files\\\\nodejs;%PATH% && cd C:\\\\Users\\\\samsi\\\\Projects\\\\unifiedAI\\\\unifiedai-app && npm install 2>&1\")",
+      "Bash(powershell.exe -Command '& { $env:PATH = '\\\\''C:\\\\Program Files\\\\nodejs;'\\\\'' + $env:PATH; Set-Location '\\\\''C:\\\\Users\\\\samsi\\\\Projects\\\\unifiedAI\\\\unifiedai-app'\\\\''; & npm install 2>&1 | ForEach-Object { Write-Output $_ } }')",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -Command '& { $env:PATH = '\\\\''C:\\\\Program Files\\\\nodejs;'\\\\'' + $env:PATH; Set-Location '\\\\''C:\\\\Users\\\\samsi\\\\Projects\\\\unifiedAI\\\\unifiedai-app'\\\\''; $result = & '\\\\''C:\\\\Program Files\\\\nodejs\\\\npm.cmd'\\\\'' install 2>&1; $result | ForEach-Object { Write-Output $_ }; Write-Output \"Exit: $LASTEXITCODE\" }')",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -Command '& { $env:PATH = '\\\\''C:\\\\Program Files\\\\nodejs;'\\\\'' + $env:PATH; Set-Location '\\\\''C:\\\\Users\\\\samsi\\\\Projects\\\\unifiedAI\\\\unifiedai-app'\\\\''; $result = & '\\\\''C:\\\\Program Files\\\\nodejs\\\\npm.cmd'\\\\'' run build 2>&1; $result | ForEach-Object { Write-Output $_ }; Write-Output \"Exit: $LASTEXITCODE\" }')",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -Command '& { $env:PATH = '\\\\''C:\\\\Program Files\\\\nodejs;'\\\\'' + $env:PATH; Set-Location '\\\\''C:\\\\Users\\\\samsi\\\\Projects\\\\unifiedAI\\\\unifiedai-app'\\\\''; $result = & '\\\\''C:\\\\Program Files\\\\nodejs\\\\npm.cmd'\\\\'' run cap:add 2>&1; $result | ForEach-Object { Write-Output $_ }; Write-Output \"Exit: $LASTEXITCODE\" }')",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -Command '& { $env:PATH = '\\\\''C:\\\\Program Files\\\\nodejs;'\\\\'' + $env:PATH; Set-Location '\\\\''C:\\\\Users\\\\samsi\\\\Projects\\\\unifiedAI\\\\unifiedai-app'\\\\''; $result = & '\\\\''C:\\\\Program Files\\\\nodejs\\\\npm.cmd'\\\\'' run cap:sync 2>&1; $result | ForEach-Object { Write-Output $_ }; Write-Output \"Exit: $LASTEXITCODE\" }')",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -Command '& { $env:PATH = '\\\\''C:\\\\Program Files\\\\nodejs;'\\\\'' + $env:PATH; Set-Location '\\\\''C:\\\\Users\\\\samsi\\\\Projects\\\\unifiedAI\\\\unifiedai-app'\\\\''; $result = & '\\\\''C:\\\\Program Files\\\\nodejs\\\\npm.cmd'\\\\'' run cap:open 2>&1; $result | ForEach-Object { Write-Output $_ }; Write-Output \"Exit: $LASTEXITCODE\" }')",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -Command '& { $env:PATH = '\\\\''C:\\\\Program Files\\\\nodejs;'\\\\'' + $env:PATH; Set-Location '\\\\''C:\\\\Users\\\\samsi\\\\Projects\\\\unifiedAI\\\\unifiedai-app'\\\\''; & '\\\\''C:\\\\Program Files\\\\nodejs\\\\npm.cmd'\\\\'' run build 2>&1 | ForEach-Object { Write-Output $_ }; Write-Output \"Exit: $LASTEXITCODE\" }')",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -Command '& { $env:PATH = '\\\\''C:\\\\Program Files\\\\nodejs;'\\\\'' + $env:PATH; Set-Location '\\\\''C:\\\\Users\\\\samsi\\\\Projects\\\\unifiedAI\\\\unifiedai-app'\\\\''; & '\\\\''C:\\\\Program Files\\\\nodejs\\\\npm.cmd'\\\\'' run cap:sync 2>&1 | ForEach-Object { Write-Output $_ }; Write-Output \"Exit: $LASTEXITCODE\" }')",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -Command '& { $env:PATH = '\\\\''C:\\\\Program Files\\\\nodejs;'\\\\'' + $env:PATH; Set-Location '\\\\''C:\\\\Users\\\\samsi\\\\Projects\\\\unifiedAI\\\\unifiedai-app'\\\\''; & '\\\\''C:\\\\Program Files\\\\nodejs\\\\npm.cmd'\\\\'' run build 2>&1 | ForEach-Object { Write-Output $_ }; & '\\\\''C:\\\\Program Files\\\\nodejs\\\\npm.cmd'\\\\'' run cap:sync 2>&1 | ForEach-Object { Write-Output $_ }; Write-Output \"Exit: $LASTEXITCODE\" }')",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -Command '$env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; npm run build 2>&1')",
+      "Bash(powershell.exe -ExecutionPolicy Bypass -Command '$env:PATH = \"C:\\\\Program Files\\\\nodejs;\" + $env:PATH; npm run cap:sync 2>&1')"
+    ]
+  }
+}
